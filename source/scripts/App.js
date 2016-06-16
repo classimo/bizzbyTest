@@ -8,6 +8,7 @@ import PercentageInput from './PercentageInput';
 import RentAmountInput from './RentAmountInput';
 import grid from '../styles/Grid.css';
 import styles from '../styles/Slider.css';
+import sliderStyles from '../../node_modules/rc-slider/assets/index.css';
 
 export default class App extends React.Component{
     constructor(){
