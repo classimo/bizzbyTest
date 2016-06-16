@@ -43,7 +43,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 module.exports = {
-  entry: './src/index',
+  entry: './source/scripts/start',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -51,7 +51,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
-    root: path.resolve(path.join(__dirname, 'src')),
+    root: path.resolve(path.join(__dirname, 'source')),
   },
   devtool: 'source-map',
   plugins: [
@@ -72,7 +72,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loaders: ['babel'],
-        include: path.join(__dirname, 'src')
+        include: path.join(__dirname, 'source')
       }
     ]
   }
