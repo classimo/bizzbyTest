@@ -2,7 +2,7 @@
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config');
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 80;
 new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
